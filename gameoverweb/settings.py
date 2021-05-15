@@ -81,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'gameoverdb',
         'USER': 'root',
-        'PASSWORD':'clave',
+        'PASSWORD':'',
         'HOST': 'localhost',
         'PORT':''
     }
