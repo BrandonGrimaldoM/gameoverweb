@@ -1,9 +1,4 @@
-"""Posts URLs."""
-
-# Django
 from django.urls import path
-
-# Views
 from App import views
 
 urlpatterns = [

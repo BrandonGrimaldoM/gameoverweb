@@ -9,7 +9,6 @@ from users.models import Profile
 
 
 class SignupForm(forms.Form):
-    """Sign up form."""
 
     username = forms.CharField(label=False,min_length=4, max_length=50,widget = forms.TextInput(attrs={'placeholder':'username','class': 'form-control','required': True}))
 
@@ -35,7 +34,6 @@ class SignupForm(forms.Form):
     )
 
     def clean_username(self):
-        """Username must be unique."""
         username = self.cleaned_data['username']
         username_taken = User.objects.filter(username=username).exists()
         if username_taken:
@@ -43,7 +41,6 @@ class SignupForm(forms.Form):
         return username
 
     def clean(self):
-        """Verify password confirmation match."""
         data = super().clean()
 
         password = data['password']
@@ -55,7 +52,6 @@ class SignupForm(forms.Form):
         return data
 
     def save(self):
-        """Create user and profile."""
         data = self.cleaned_data
         data.pop('password_confirmation')
 
