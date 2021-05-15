@@ -1,22 +1,15 @@
 {% extends "layout.html" %}
 
 {% block head_content %}
-
     <title>GameOverWeb</title>
-    
 {% endblock%}
-
+<!DOCTYPE html>
 {% block container %}
 
     <div class="container">
         <div class="row">
-
-            {% for post in posts %}
-                {% include "App/game_card.html" %}
-            {% endfor %}
+            {% include "App/game_card.html" %}
         </div>
     </div>
-
-    {% include "pagination.html" %}
 
 {% endblock %}

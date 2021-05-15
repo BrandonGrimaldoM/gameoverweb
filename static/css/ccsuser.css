@@ -1,0 +1,16 @@
+html, body {
+    background-repeat: no-repeat;
+    background-image: url(https://i.pinimg.com/originals/c5/3f/60/c53f60a4b9b160ffa3e79fbcbfb4e2a4.gif);
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#auth-container {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 25px;
+}
+
+
